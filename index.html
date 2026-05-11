@@ -2,12 +2,14 @@
 <html lang="en">
 
 <head>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Yugendra | VLSI Portfolio</title>
 
-  <link rel="icon" href="c:\Users\makam\Downloads\yuga logo for portifolio.png">
+  <link rel="icon" href="favicon.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -16,6 +18,7 @@
     rel="stylesheet">
 
   <style>
+
     * {
       margin: 0;
       padding: 0;
@@ -29,8 +32,6 @@
     }
 
     :root {
-
-      /* LIGHT THEME */
 
       --amber: #EF9F27;
       --amber-dark: #BA7517;
@@ -54,8 +55,6 @@
 
     body.dark-theme {
 
-      /* DARK THEME */
-
       --amber: #FFB547;
       --amber-dark: #E89A24;
       --amber-light: rgba(255, 181, 71, 0.12);
@@ -74,39 +73,71 @@
       --border: rgba(255, 255, 255, 0.08);
 
       --card-hover: rgba(255, 255, 255, 0.18);
+
+      background-image:
+        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+
+      background-size: 30px 30px;
     }
 
     body {
+
       font-family: 'Syne', sans-serif;
+
       color: var(--text);
+
       background: var(--bg);
 
-      max-width: 950px;
+      max-width: 980px;
+
       margin: 0 auto;
 
       min-height: 100vh;
 
       border-left: 1px solid var(--border);
+
       border-right: 1px solid var(--border);
+
+      animation: fadeIn 0.8s ease;
+    }
+
+    @keyframes fadeIn {
+
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
     }
 
     .hero {
+
       padding: 3rem 2rem;
-      border-bottom: 1px solid var(--border);
-    }
 
-    .hero {
+      border-bottom: 1px solid var(--border);
+
       box-shadow: 0 0 40px rgba(255,181,71,0.04);
     }
-    
+
     .hero-grid {
+
       display: grid;
+
       grid-template-columns: 1fr 320px;
+
       gap: 2rem;
+
       align-items: center;
     }
 
     .pcb-badge {
+
       display: inline-block;
 
       padding: 5px 12px;
@@ -127,7 +158,8 @@
     }
 
     h1 {
-      font-size: clamp(2.7rem, 6vw, 4.5rem);
+
+      font-size: clamp(2.8rem, 6vw, 4.8rem);
 
       line-height: 1;
 
@@ -141,20 +173,24 @@
     }
 
     .hero-sub {
+
       margin-top: 1rem;
 
       line-height: 1.8;
 
       color: var(--text-muted);
 
-      max-width: 560px;
+      max-width: 580px;
 
       font-size: 15px;
     }
 
     .hero-actions {
+
       display: flex;
+
       gap: 12px;
+
       flex-wrap: wrap;
 
       margin-top: 2rem;
@@ -162,6 +198,7 @@
 
     .btn-primary,
     .btn-ghost {
+
       padding: 11px 18px;
 
       border-radius: 8px;
@@ -176,9 +213,13 @@
     }
 
     .btn-primary {
+
       background: var(--amber);
+
       color: white;
+
       border: none;
+
       font-weight: 700;
     }
 
@@ -187,29 +228,40 @@
     }
 
     .btn-ghost {
+
       border: 1px solid var(--border);
+
       color: var(--text);
+
       background: transparent;
     }
 
     .btn-ghost:hover {
+
       background: var(--surface);
+
+      transform: translateY(-2px);
     }
 
     .hero-illustration {
+
       display: flex;
+
       justify-content: center;
+
       align-items: center;
     }
 
     .hero-chip {
+
       width: 100%;
+
       max-width: 280px;
 
       object-fit: contain;
 
       filter:
-        drop-shadow(0 0 25px rgba(0, 255, 255, 0.15));
+        drop-shadow(0 0 25px rgba(0,255,255,0.15));
 
       animation: floatChip 4s ease-in-out infinite;
     }
@@ -231,14 +283,18 @@
     }
 
     .stats-bar {
+
       display: grid;
+
       grid-template-columns: repeat(4, 1fr);
 
       border-bottom: 1px solid var(--border);
     }
 
     .stat-item {
+
       padding: 1.5rem;
+
       border-right: 1px solid var(--border);
     }
 
@@ -247,6 +303,7 @@
     }
 
     .stat-num {
+
       color: var(--amber);
 
       font-size: 1.8rem;
@@ -257,6 +314,7 @@
     }
 
     .stat-label {
+
       margin-top: 5px;
 
       font-size: 11px;
@@ -265,19 +323,25 @@
     }
 
     .section {
+
       padding: 2rem;
+
       border-bottom: 1px solid var(--border);
     }
 
     .section-header {
+
       display: flex;
+
       align-items: center;
+
       gap: 12px;
 
       margin-bottom: 1.5rem;
     }
 
     .section-tag {
+
       background: var(--teal-light);
 
       color: var(--teal);
@@ -292,14 +356,18 @@
     }
 
     .section-title {
+
       font-size: 1.2rem;
+
       font-weight: 700;
     }
 
     .skills-grid,
     .projects-grid,
     .contact-grid {
+
       display: grid;
+
       gap: 14px;
     }
 
@@ -318,6 +386,7 @@
     .skill-chip,
     .project-card,
     .contact-card {
+
       background: var(--surface);
 
       border: 1px solid var(--border);
@@ -330,11 +399,14 @@
     }
 
     .skill-name {
+
       font-size: 13px;
+
       font-weight: 600;
     }
 
     .skill-pct {
+
       font-size: 10px;
 
       color: var(--text-muted);
@@ -343,6 +415,7 @@
     }
 
     .skill-bar-bg {
+
       margin-top: 10px;
 
       height: 5px;
@@ -355,17 +428,23 @@
     }
 
     .skill-bar-fill {
+
       height: 100%;
+
       background: var(--amber);
     }
 
     .project-card {
+
       padding: 1.4rem;
+
       position: relative;
+
       overflow: hidden;
     }
 
     .project-card::before {
+
       content: "";
 
       position: absolute;
@@ -391,12 +470,14 @@
 
     .project-card:hover,
     .contact-card:hover {
+
       transform: translateY(-4px);
 
       border-color: var(--card-hover);
     }
 
     .proj-title {
+
       font-size: 15px;
 
       font-weight: 700;
@@ -405,6 +486,7 @@
     }
 
     .proj-desc {
+
       font-size: 12px;
 
       line-height: 1.7;
@@ -415,12 +497,16 @@
     }
 
     .proj-tags {
+
       display: flex;
+
       flex-wrap: wrap;
+
       gap: 6px;
     }
 
     .proj-tag {
+
       font-size: 10px;
 
       padding: 3px 7px;
@@ -434,12 +520,34 @@
       font-family: 'Space Mono', monospace;
     }
 
+    .project-link {
+
+      display: inline-block;
+
+      margin-top: 14px;
+
+      color: var(--amber);
+
+      text-decoration: none;
+
+      font-size: 12px;
+
+      font-family: 'Space Mono', monospace;
+    }
+
+    .project-link:hover {
+      transform: translateX(4px);
+    }
+
     .timeline {
+
       position: relative;
+
       padding-left: 24px;
     }
 
     .timeline::before {
+
       content: "";
 
       position: absolute;
@@ -454,6 +562,7 @@
     }
 
     .tl-item {
+
       position: relative;
 
       padding-left: 1rem;
@@ -462,6 +571,7 @@
     }
 
     .tl-dot {
+
       position: absolute;
 
       left: -24px;
@@ -478,6 +588,7 @@
     }
 
     .tl-date {
+
       font-size: 10px;
 
       font-family: 'Space Mono', monospace;
@@ -488,11 +599,14 @@
     }
 
     .tl-role {
+
       font-size: 14px;
+
       font-weight: 700;
     }
 
     .tl-org {
+
       color: var(--teal);
 
       font-size: 13px;
@@ -501,6 +615,7 @@
     }
 
     .tl-desc {
+
       font-size: 12px;
 
       line-height: 1.7;
@@ -509,6 +624,7 @@
     }
 
     .contact-card {
+
       padding: 15px;
 
       text-decoration: none;
@@ -517,17 +633,23 @@
     }
 
     .contact-label {
+
       font-size: 11px;
+
       color: var(--text-muted);
     }
 
     .contact-val {
+
       margin-top: 4px;
+
       font-size: 13px;
+
       font-weight: 600;
     }
 
     .footer {
+
       padding: 1.5rem;
 
       text-align: center;
@@ -558,7 +680,9 @@
       }
 
     }
+
   </style>
+
 </head>
 
 <body>
@@ -582,8 +706,9 @@
 
         <p class="hero-sub">
           ECE student passionate about digital electronics, embedded systems, and RTL design.
-          Interested in solving hardware-level problems through simulation, prototyping, and digital design experimentation.
-          Currently exploring VLSI front-end design and strengthening foundations in Verilog and digital system design.
+          Experienced in hardware prototyping, sensor interfacing, and circuit-level implementation
+          through practical projects. Currently exploring VLSI front-end design and strengthening
+          foundations in Verilog and digital system design.
         </p>
 
         <div class="hero-actions">
@@ -592,7 +717,7 @@
             🌙 Dark Mode
           </button>
 
-          <a href="resume.pdf" class="btn-primary" download>
+          <a href="Resume.pdf" class="btn-primary" download>
             Download Resume
           </a>
 
@@ -604,12 +729,10 @@
 
       </div>
 
-      <!-- HERO IMAGE -->
-
       <div class="hero-illustration">
 
         <img
-          src="c:\Users\makam\Downloads\vlsi illustration for portifolio.png"
+          src="vlsi-chip.png"
           alt="VLSI Illustration"
           class="hero-chip">
 
@@ -624,7 +747,7 @@
   <div class="stats-bar">
 
     <div class="stat-item">
-      <div class="stat-num">3+</div>
+      <div class="stat-num">4+</div>
       <div class="stat-label">Projects Built</div>
     </div>
 
@@ -657,65 +780,75 @@
     <div class="skills-grid">
 
       <div class="skill-chip">
+
         <div style="display:flex;justify-content:space-between;">
-          <span class="skill-name">tinkercad</span>
+          <span class="skill-name">Tinkercad</span>
           <span class="skill-pct">Advanced</span>
         </div>
 
         <div class="skill-bar-bg">
           <div class="skill-bar-fill" style="width:90%"></div>
         </div>
+
       </div>
 
       <div class="skill-chip">
+
+        <div style="display:flex;justify-content:space-between;">
+          <span class="skill-name">KiCad</span>
+          <span class="skill-pct">Intermediate</span>
+        </div>
+
+        <div class="skill-bar-bg">
+          <div class="skill-bar-fill" style="width:75%"></div>
+        </div>
+
+      </div>
+
+      <div class="skill-chip">
+
+        <div style="display:flex;justify-content:space-between;">
+          <span class="skill-name">Embedded C / Arduino</span>
+          <span class="skill-pct">Intermediate</span>
+        </div>
+
+        <div class="skill-bar-bg">
+          <div class="skill-bar-fill" style="width:70%"></div>
+        </div>
+
+      </div>
+
+      <div class="skill-chip">
+
         <div style="display:flex;justify-content:space-between;">
           <span class="skill-name">Digital Electronics</span>
           <span class="skill-pct">Proficient</span>
         </div>
 
         <div class="skill-bar-bg">
-          <div class="skill-bar-fill" style="width:75%"></div>
+          <div class="skill-bar-fill" style="width:85%"></div>
         </div>
+
       </div>
 
       <div class="skill-chip">
+
         <div style="display:flex;justify-content:space-between;">
-          <span class="skill-name">Arduino</span>
-          <span class="skill-pct">intermediate</span>
-        </div>
-
-        <div class="skill-bar-bg">
-          <div class="skill-bar-fill" style="width:50%"></div>
-        </div>
-      </div>
-
-      <div class="skill-chip">
-        <div style="display:flex;justify-content:space-between;">
-          <span class="skill-name">Kicad</span>
-          <span class="skill-pct">Beginner</span>
-        </div>
-
-        <div class="skill-bar-bg">
-          <div class="skill-bar-fill" style="width:40%"></div>
-        </div>
-      </div>
-
-      <div class="skill-chip">
-        <div style="display:flex;justify-content:space-between;">
-          <span class="skill-name">Verilog</span>
+          <span class="skill-name">Verilog HDL</span>
           <span class="skill-pct">Learning</span>
         </div>
 
         <div class="skill-bar-bg">
-          <div class="skill-bar-fill" style="width:35%"></div>
+          <div class="skill-bar-fill" style="width:55%"></div>
         </div>
+
       </div>
 
     </div>
 
   </div>
 
-  <!-- LEARNING -->
+  <!-- LEARNING FOCUS -->
 
   <div class="section">
 
@@ -727,7 +860,7 @@
     <div class="skills-grid">
 
       <div class="skill-chip">
-        <span class="skill-name">Verilog </span>
+        <span class="skill-name">Verilog HDL</span>
       </div>
 
       <div class="skill-chip">
@@ -735,22 +868,28 @@
       </div>
 
       <div class="skill-chip">
-       <span class="skill-name">FPGA Basics</span>
+        <span class="skill-name">Combinational Logic Design</span>
       </div>
 
       <div class="skill-chip">
-       <span class="skill-name">Digital Logic Design</span>
+        <span class="skill-name">Sequential Circuits</span>
       </div>
 
       <div class="skill-chip">
-        <span class="skill-name">VLSI Fundamentals</span>
+        <span class="skill-name">FPGA Basics</span>
+      </div>
+
+      <div class="skill-chip">
+        <span class="skill-name">Digital System Design</span>
+      </div>
+
+      <div class="skill-chip">
+        <span class="skill-name">CMOS & VLSI Fundamentals</span>
       </div>
 
     </div>
 
   </div>
-
-</div>
 
   <!-- PROJECTS -->
 
@@ -766,30 +905,11 @@
       <div class="project-card amber">
 
         <div class="proj-title">
-         Verilog Implementation of Half Adder & Full Adder
-       </div>
-
-        <div class="proj-desc">
-          Designed and simulated Half Adder and Full Adder circuits using Verilog to understand combinational logic design, RTL modeling, and digital circuit verification fundamentals.
-        </div>
-
-        <div class="proj-tags">
-          <span class="proj-tag">Verilog</span>
-          <span class="proj-tag">RTL Design</span>
-          <span class="proj-tag">Vivado</span>
-          <span class="proj-tag">EDA playground</span>
-        </div>
-
-      </div>
-
-      <div class="project-card coral">
-
-        <div class="proj-title">
           Drunk-Driving Accident Prevention System
         </div>
 
         <div class="proj-desc">
-          Developed a microcontroller-based drunk-driving prevention prototype with alcohol-level simulation and ignition lock mechanism for safety-focused embedded applications.
+          Developed a microcontroller-based prevention system using alcohol-level simulation and ignition lock control for safety-focused embedded applications.
         </div>
 
         <div class="proj-tags">
@@ -807,7 +927,7 @@
         </div>
 
         <div class="proj-desc">
-          Designed an IR-based automatic street lighting and curve-alert system to improve road safety and reduce power consumption.
+          Designed an IR-based automatic street lighting and curve-alert system to improve road safety and reduce unnecessary power consumption.
         </div>
 
         <div class="proj-tags">
@@ -818,15 +938,41 @@
 
       </div>
 
-    </div>
+      <div class="project-card coral">
 
-  </div>
+        <div class="proj-title">
+          Verilog HDL Implementation of Half Adder & Full Adder
+        </div>
 
-  <!-- EXPERIENCE -->
+        <div class="proj-desc">
+          Designed and simulated Half Adder and Full Adder circuits using Verilog HDL to understand combinational logic design and RTL fundamentals.
+        </div>
 
-  </div>
+        <div class="proj-tags">
+          <span class="proj-tag">Verilog HDL</span>
+          <span class="proj-tag">RTL Design</span>
+          <span class="proj-tag">Digital Logic</span>
+        </div>
 
-</div>
+      </div>
+
+      <div class="project-card amber">
+
+        <div class="proj-title">
+          4-Bit Ripple Carry Adder
+        </div>
+
+        <div class="proj-desc">
+          Implemented and simulated a 4-bit Ripple Carry Adder using Verilog HDL to understand propagation delay and modular RTL design concepts.
+        </div>
+
+        <div class="proj-tags">
+          <span class="proj-tag">Verilog HDL</span>
+          <span class="proj-tag">Adder Design</span>
+          <span class="proj-tag">RTL</span>
+        </div>
+
+      </div>
 
     </div>
 
@@ -949,38 +1095,42 @@
     </div>
 
   </div>
-  
+
   <!-- ACHIEVEMENTS -->
 
   <div class="section">
+
     <div class="section-header">
       <span class="section-tag">06 / ACHIEVEMENTS</span>
-      <span class="section-title">Achievements & Honors</span>
+      <span class="section-title">Achievements & Certifications</span>
     </div>
 
     <div class="timeline">
-  
+
       <div class="tl-item">
 
         <div class="tl-dot"></div>
 
         <div class="tl-date">
-         2025
+          2025
         </div>
 
-       <div class="tl-role">
-         1st Prize – Mohana Mantra Technical Event
+        <div class="tl-role">
+          1st Prize – Mohana Mantra Technical Event
         </div>
 
         <div class="tl-org">
-         Technical Project Competition
+          Technical Project Competition
         </div>
 
         <div class="tl-desc">
-         Secured 1st place in a technical project competition for innovative problem-solving and practical hardware implementation. Awarded a cash prize of ₹7,500.
+          Secured 1st place in a technical project competition for innovative problem-solving and practical hardware implementation. Awarded a cash prize of ₹7,500.
         </div>
+
       </div>
+
     </div>
+
   </div>
 
   <!-- CONTACT -->
@@ -994,11 +1144,15 @@
 
     <div class="contact-grid">
 
-      <a href="mailto:makamyugendra@gmail.com" class="contact-card">
+      <a
+        href="mailto:makamyugendra@gmail.com"
+        class="contact-card">
 
         <div>
           <div class="contact-label">Email</div>
-          <div class="contact-val">makamyugendra@gmail.com</div>
+          <div class="contact-val">
+            makamyugendra@gmail.com
+          </div>
         </div>
 
       </a>
@@ -1010,23 +1164,26 @@
 
         <div>
           <div class="contact-label">LinkedIn</div>
-          <div class="contact-val">linkedin/yugendra7</div>
+          <div class="contact-val">
+            linkedin/yugendra7
+          </div>
         </div>
 
       </a>
 
-      <!--<a
-        href="https://github.com/"
+      <a
+        href="https://github.com/yuga-exe"
         target="_blank"
         class="contact-card">
 
         <div>
           <div class="contact-label">GitHub</div>
-          <div class="contact-val">github profile</div>
+          <div class="contact-val">
+            github/yuga-exe
+          </div>
         </div>
 
-        </a>
-      -->
+      </a>
 
     </div>
 
@@ -1038,7 +1195,7 @@
     built by yuga · aspiring vlsi engineer
   </div>
 
-  <!-- THEME SCRIPT -->
+  <!-- THEME TOGGLE -->
 
   <script>
 
