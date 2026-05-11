@@ -8,6 +8,8 @@
 
   <title>Yugendra | VLSI Portfolio</title>
 
+  <!-- IMPORTANT -->
+  <!-- Put favicon.png in same folder as this HTML file -->
   <link rel="icon" href="favicon.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -89,7 +91,7 @@
 
       background: var(--bg);
 
-      max-width: 980px;
+      max-width: 950px;
 
       margin: 0 auto;
 
@@ -98,22 +100,6 @@
       border-left: 1px solid var(--border);
 
       border-right: 1px solid var(--border);
-
-      animation: fadeIn 0.8s ease;
-    }
-
-    @keyframes fadeIn {
-
-      from {
-        opacity: 0;
-        transform: translateY(10px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-
     }
 
     .hero {
@@ -159,7 +145,7 @@
 
     h1 {
 
-      font-size: clamp(2.8rem, 6vw, 4.8rem);
+      font-size: clamp(2.7rem, 6vw, 4.5rem);
 
       line-height: 1;
 
@@ -180,7 +166,7 @@
 
       color: var(--text-muted);
 
-      max-width: 580px;
+      max-width: 560px;
 
       font-size: 15px;
     }
@@ -237,10 +223,7 @@
     }
 
     .btn-ghost:hover {
-
       background: var(--surface);
-
-      transform: translateY(-2px);
     }
 
     .hero-illustration {
@@ -399,9 +382,7 @@
     }
 
     .skill-name {
-
       font-size: 13px;
-
       font-weight: 600;
     }
 
@@ -518,25 +499,6 @@
       background: var(--bg);
 
       font-family: 'Space Mono', monospace;
-    }
-
-    .project-link {
-
-      display: inline-block;
-
-      margin-top: 14px;
-
-      color: var(--amber);
-
-      text-decoration: none;
-
-      font-size: 12px;
-
-      font-family: 'Space Mono', monospace;
-    }
-
-    .project-link:hover {
-      transform: translateX(4px);
     }
 
     .timeline {
@@ -672,7 +634,7 @@
       }
 
       .hero-chip {
-        max-width: 220px;
+        max-width: 180px;
       }
 
       .stats-bar {
@@ -706,9 +668,8 @@
 
         <p class="hero-sub">
           ECE student passionate about digital electronics, embedded systems, and RTL design.
-          Experienced in hardware prototyping, sensor interfacing, and circuit-level implementation
-          through practical projects. Currently exploring VLSI front-end design and strengthening
-          foundations in Verilog and digital system design.
+          Interested in solving hardware-level problems through simulation, prototyping, and digital design experimentation.
+          Currently exploring VLSI front-end design and strengthening foundations in Verilog and digital system design.
         </p>
 
         <div class="hero-actions">
@@ -716,6 +677,9 @@
           <button id="themeToggle" class="btn-ghost">
             🌙 Dark Mode
           </button>
+
+          <!-- IMPORTANT -->
+          <!-- Put resume.pdf in same folder as this HTML file -->
 
           <a href="Resume.pdf" class="btn-primary" download>
             Download Resume
@@ -728,6 +692,9 @@
         </div>
 
       </div>
+
+      <!-- IMPORTANT -->
+      <!-- Put vlsi-chip.png in same folder as this HTML file -->
 
       <div class="hero-illustration">
 
@@ -747,7 +714,7 @@
   <div class="stats-bar">
 
     <div class="stat-item">
-      <div class="stat-num">4+</div>
+      <div class="stat-num">3+</div>
       <div class="stat-label">Projects Built</div>
     </div>
 
@@ -795,8 +762,8 @@
       <div class="skill-chip">
 
         <div style="display:flex;justify-content:space-between;">
-          <span class="skill-name">KiCad</span>
-          <span class="skill-pct">Intermediate</span>
+          <span class="skill-name">Digital Electronics</span>
+          <span class="skill-pct">Proficient</span>
         </div>
 
         <div class="skill-bar-bg">
@@ -808,12 +775,12 @@
       <div class="skill-chip">
 
         <div style="display:flex;justify-content:space-between;">
-          <span class="skill-name">Embedded C / Arduino</span>
+          <span class="skill-name">Arduino</span>
           <span class="skill-pct">Intermediate</span>
         </div>
 
         <div class="skill-bar-bg">
-          <div class="skill-bar-fill" style="width:70%"></div>
+          <div class="skill-bar-fill" style="width:50%"></div>
         </div>
 
       </div>
@@ -821,12 +788,12 @@
       <div class="skill-chip">
 
         <div style="display:flex;justify-content:space-between;">
-          <span class="skill-name">Digital Electronics</span>
-          <span class="skill-pct">Proficient</span>
+          <span class="skill-name">KiCad</span>
+          <span class="skill-pct">Beginner</span>
         </div>
 
         <div class="skill-bar-bg">
-          <div class="skill-bar-fill" style="width:85%"></div>
+          <div class="skill-bar-fill" style="width:40%"></div>
         </div>
 
       </div>
@@ -834,12 +801,12 @@
       <div class="skill-chip">
 
         <div style="display:flex;justify-content:space-between;">
-          <span class="skill-name">Verilog HDL</span>
+          <span class="skill-name">Verilog</span>
           <span class="skill-pct">Learning</span>
         </div>
 
         <div class="skill-bar-bg">
-          <div class="skill-bar-fill" style="width:55%"></div>
+          <div class="skill-bar-fill" style="width:35%"></div>
         </div>
 
       </div>
@@ -848,7 +815,7 @@
 
   </div>
 
-  <!-- LEARNING FOCUS -->
+  <!-- LEARNING -->
 
   <div class="section">
 
@@ -860,7 +827,7 @@
     <div class="skills-grid">
 
       <div class="skill-chip">
-        <span class="skill-name">Verilog HDL</span>
+        <span class="skill-name">Verilog</span>
       </div>
 
       <div class="skill-chip">
@@ -868,23 +835,15 @@
       </div>
 
       <div class="skill-chip">
-        <span class="skill-name">Combinational Logic Design</span>
-      </div>
-
-      <div class="skill-chip">
-        <span class="skill-name">Sequential Circuits</span>
-      </div>
-
-      <div class="skill-chip">
         <span class="skill-name">FPGA Basics</span>
       </div>
 
       <div class="skill-chip">
-        <span class="skill-name">Digital System Design</span>
+        <span class="skill-name">Digital Logic Design</span>
       </div>
 
       <div class="skill-chip">
-        <span class="skill-name">CMOS & VLSI Fundamentals</span>
+        <span class="skill-name">VLSI Fundamentals</span>
       </div>
 
     </div>
@@ -905,11 +864,30 @@
       <div class="project-card amber">
 
         <div class="proj-title">
+          Verilog Implementation of Half Adder & Full Adder
+        </div>
+
+        <div class="proj-desc">
+          Designed and simulated Half Adder and Full Adder circuits using Verilog to understand combinational logic design, RTL modeling, and digital circuit verification fundamentals.
+        </div>
+
+        <div class="proj-tags">
+          <span class="proj-tag">Verilog</span>
+          <span class="proj-tag">RTL Design</span>
+          <span class="proj-tag">Vivado</span>
+          <span class="proj-tag">EDA Playground</span>
+        </div>
+
+      </div>
+
+      <div class="project-card coral">
+
+        <div class="proj-title">
           Drunk-Driving Accident Prevention System
         </div>
 
         <div class="proj-desc">
-          Developed a microcontroller-based prevention system using alcohol-level simulation and ignition lock control for safety-focused embedded applications.
+          Developed a microcontroller-based drunk-driving prevention prototype with alcohol-level simulation and ignition lock mechanism for safety-focused embedded applications.
         </div>
 
         <div class="proj-tags">
@@ -927,49 +905,13 @@
         </div>
 
         <div class="proj-desc">
-          Designed an IR-based automatic street lighting and curve-alert system to improve road safety and reduce unnecessary power consumption.
+          Designed an IR-based automatic street lighting and curve-alert system to improve road safety and reduce power consumption.
         </div>
 
         <div class="proj-tags">
           <span class="proj-tag">IR Sensors</span>
           <span class="proj-tag">IoT</span>
           <span class="proj-tag">Safety</span>
-        </div>
-
-      </div>
-
-      <div class="project-card coral">
-
-        <div class="proj-title">
-          Verilog HDL Implementation of Half Adder & Full Adder
-        </div>
-
-        <div class="proj-desc">
-          Designed and simulated Half Adder and Full Adder circuits using Verilog HDL to understand combinational logic design and RTL fundamentals.
-        </div>
-
-        <div class="proj-tags">
-          <span class="proj-tag">Verilog HDL</span>
-          <span class="proj-tag">RTL Design</span>
-          <span class="proj-tag">Digital Logic</span>
-        </div>
-
-      </div>
-
-      <div class="project-card amber">
-
-        <div class="proj-title">
-          4-Bit Ripple Carry Adder
-        </div>
-
-        <div class="proj-desc">
-          Implemented and simulated a 4-bit Ripple Carry Adder using Verilog HDL to understand propagation delay and modular RTL design concepts.
-        </div>
-
-        <div class="proj-tags">
-          <span class="proj-tag">Verilog HDL</span>
-          <span class="proj-tag">Adder Design</span>
-          <span class="proj-tag">RTL</span>
         </div>
 
       </div>
@@ -1028,7 +970,7 @@
         </div>
 
         <div class="tl-desc">
-          Learned HDL coding concepts, digital logic, sequential circuits, FSMs, and FPGA fundamentals.
+          Learned Verilog coding concepts, digital logic, sequential circuits, FSMs, and FPGA fundamentals.
         </div>
 
       </div>
@@ -1102,7 +1044,7 @@
 
     <div class="section-header">
       <span class="section-tag">06 / ACHIEVEMENTS</span>
-      <span class="section-title">Achievements & Certifications</span>
+      <span class="section-title">Achievements & Honors</span>
     </div>
 
     <div class="timeline">
@@ -1144,9 +1086,7 @@
 
     <div class="contact-grid">
 
-      <a
-        href="mailto:makamyugendra@gmail.com"
-        class="contact-card">
+      <a href="mailto:makamyugendra@gmail.com" class="contact-card">
 
         <div>
           <div class="contact-label">Email</div>
@@ -1171,20 +1111,6 @@
 
       </a>
 
-      <a
-        href="https://github.com/yuga-exe"
-        target="_blank"
-        class="contact-card">
-
-        <div>
-          <div class="contact-label">GitHub</div>
-          <div class="contact-val">
-            github/yuga-exe
-          </div>
-        </div>
-
-      </a>
-
     </div>
 
   </div>
@@ -1195,7 +1121,7 @@
     built by yuga · aspiring vlsi engineer
   </div>
 
-  <!-- THEME TOGGLE -->
+  <!-- THEME SCRIPT -->
 
   <script>
 
